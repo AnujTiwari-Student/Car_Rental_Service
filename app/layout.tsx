@@ -16,7 +16,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className="min-h-screen flex flex-col overflow-x-hidden">
+        <div>
+          <main>
+            {children}
+          </main>
+        </div>
+      </body>
     </html>
   );
 }
