@@ -1,5 +1,5 @@
 import React from 'react'
-import img from '../assets/NewImage.png'
+import img from '../assets/img-24-copyright.webp'
 import Image from 'next/image'
 import { ArrowRight, Play } from 'lucide-react'
 import { FaApple, FaGooglePlay } from 'react-icons/fa'
@@ -14,7 +14,7 @@ const data = [
 
 function DownloadTab() {
   return (
-    <div className='flex flex-col md:flex-row justify-center items-center md:w-10/12 lg:w-8/12 mx-auto  md:justify-between space-y-5'>
+    <div className='flex flex-col md:flex-row justify-center items-center md:w-11/12 lg:w-9/12 xl:w-8/12 mx-auto lg:mx-48 md:mx-24 xl:mx-auto  md:justify-between space-y-5'>
         {data.map((item , index)=>(
             <div key={index} className='flex flex-col md:items-start mx-4 md:mx-auto md:w-9/12 md:text-start space-y-5'>
                 <h2 className='uppercase text-green-500 font-bold text-xl'>{item.title}</h2>
@@ -38,7 +38,7 @@ function DownloadTab() {
             </div>
         ))}
         <div className='hidden md:block'>
-            <Image src={img} alt='download-mockup' className='h-18 w-40' />
+            <Image src={img} alt='download-mockup' height={550} width={450} className='drop-shadow-xl' />
         </div>
     </div>
   )
