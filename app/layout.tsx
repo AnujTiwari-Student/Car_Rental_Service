@@ -18,15 +18,21 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="min-h-screen flex flex-col overflow-x-hidden bg-white">
-        <header>
+
+        <header className="">
           <Header />
         </header>
+
         <div>
+
           <main>
             {children}
           </main>
+
         </div>
+
       </body>
+      
     </html>
   );
 }

@@ -38,7 +38,7 @@ function DownloadTab() {
             </div>
         ))}
         <div className='hidden md:block'>
-            <Image src={img} alt='download-mockup' height={550} width={450} className='drop-shadow-xl' />
+            <Image src={img} alt='download-mockup' height={550} width={450}/>
         </div>
     </div>
   )

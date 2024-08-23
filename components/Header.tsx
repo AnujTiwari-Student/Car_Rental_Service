@@ -22,6 +22,7 @@ import {
   MenubarSubTrigger,
   MenubarTrigger,
 } from "@/components/ui/menubar"
+import Link from 'next/link'
 
 
 
@@ -35,13 +36,13 @@ function Header() {
 
   return (
     <div className='mx-4 my-4 md:mx-20 flex flex-row justify-between lg:justify-around items-center'>
-        <div className='mr-8'>
-            <Image src={logo} alt='logo' height={150} width={150} />
+        <div className=''>
+            <Image src={logo} alt='logo' height={60} width={60} />
         </div>
         <div className='items-center lg:flex hidden '>
           <ul className='flex lg:space-x-10 space-y-6 lg:space-y-0 lg:flex-row flex-col'>
             <li>
-              <a href='#' className='text-lg cursor-pointer flex items-center space-x-1'>
+              <Link href='/' className='text-lg cursor-pointer flex items-center space-x-1'>
                 <Menubar>
                   <MenubarMenu>
                     <MenubarTrigger className='flex space-x-1 items-center cursor-pointer'>Home</MenubarTrigger>
@@ -64,10 +65,10 @@ function Header() {
                     </MenubarContent>
                   </MenubarMenu>
                 </Menubar>
-              </a>
+              </Link>
             </li>
             <li>
-              <a href='#' className='text-lg cursor-pointer flex items-center space-x-1'>
+              <Link href='#' className='text-lg cursor-pointer flex items-center space-x-1'>
                   <Menubar>
                     <MenubarMenu>
                       <MenubarTrigger className='flex space-x-1 items-center cursor-pointer'>Features</MenubarTrigger>
@@ -84,10 +85,10 @@ function Header() {
                       </MenubarContent>
                     </MenubarMenu>
                   </Menubar>
-                </a>
+                </Link>
             </li>
             <li>
-              <a href='#' className='text-lg cursor-pointer flex items-center space-x-1'>
+              <Link href='/AboutUs' className='text-lg cursor-pointer flex items-center space-x-1'>
                   <Menubar>
                     <MenubarMenu>
                       <MenubarTrigger className='flex space-x-1 items-center cursor-pointer'>About Us</MenubarTrigger>
@@ -106,64 +107,34 @@ function Header() {
                       </MenubarContent>
                     </MenubarMenu>
                   </Menubar>
-              </a>
+              </Link>
             </li>
             <li>
-              <a href='#' className='text-lg cursor-pointer'>
+              <Link href='#' className='text-lg cursor-pointer'>
                   <Menubar>
                     <MenubarMenu>
                       <MenubarTrigger className='flex space-x-1 items-center cursor-pointer'>Rent a Car</MenubarTrigger>
                     </MenubarMenu>
                   </Menubar>
-              </a>
+              </Link>
             </li>
             <li>
-              <a href='#' className='text-lg cursor-pointer flex items-center space-x-1'>
+              <Link href='/Blogs' className='text-lg cursor-pointer flex items-center space-x-1'>
                   <Menubar>
                     <MenubarMenu>
-                      <MenubarTrigger className='flex space-x-1 items-center cursor-pointer'>News</MenubarTrigger>
-                      <MenubarContent>
-                        <MenubarItem>All Posts</MenubarItem>
-                        <MenubarSeparator />
-                          <MenubarSub>
-                            <MenubarSubTrigger className='flex space-x-2 items-center'>Classic Style</MenubarSubTrigger>
-                            <MenubarSubContent>
-                              <MenubarItem>2 Columns</MenubarItem>
-                              <MenubarItem>3 Columns</MenubarItem>
-                            </MenubarSubContent>
-                          </MenubarSub>
-                        <MenubarSeparator />
-                          <MenubarSub>
-                            <MenubarSubTrigger className='flex space-x-2 items-center'>Portfolio Style</MenubarSubTrigger>
-                            <MenubarSubContent>
-                              <MenubarItem>2 Columns</MenubarItem>
-                              <MenubarItem>3 Columns</MenubarItem>
-                              <MenubarItem>4 Columns</MenubarItem>
-                            </MenubarSubContent>
-                          </MenubarSub>
-                        <MenubarSeparator />
-                          <MenubarSub>
-                            <MenubarSubTrigger className='flex space-x-2 items-center'>Chess Style</MenubarSubTrigger>
-                            <MenubarSubContent>
-                              <MenubarItem>1 Columns</MenubarItem>
-                              <MenubarItem>2 Columns</MenubarItem>
-                              <MenubarItem>3 Columns</MenubarItem>
-                            </MenubarSubContent>
-                          </MenubarSub>
-                        <MenubarSeparator />
-                      </MenubarContent>
+                      <MenubarTrigger className='flex space-x-1 items-center cursor-pointer'>Blogs</MenubarTrigger>
                     </MenubarMenu>
                   </Menubar>
-              </a>
+              </Link>
             </li>
             <li>
-              <a href='#' className='text-lg cursor-pointer'>
+              <Link href='/Contact' className='text-lg cursor-pointer'>
                   <Menubar>
                     <MenubarMenu>
                       <MenubarTrigger className='flex space-x-1 items-center cursor-pointer'>Contacts</MenubarTrigger>
                     </MenubarMenu>
                   </Menubar>
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
@@ -173,139 +144,109 @@ function Header() {
           </button>
         </div>
         {isOpen &&(
-          <div className='absolute top-16 right-0 bg-white shadow-lg rounded-t-none rounded-lg p-4 w-full flex flex-col justify-center'>
-            <ul className='flex lg:space-x-10 space-y-6 lg:space-y-0 lg:flex-row flex-col md:mx-16'>
-            <li>
-              <a href='#' className='text-lg cursor-pointer flex items-center space-x-1'>
-                <Menubar>
-                  <MenubarMenu>
-                    <MenubarTrigger className='flex space-x-1 items-center cursor-pointer'>Home</MenubarTrigger>
-                    <MenubarContent>
-                      <MenubarItem>
-                        Home Car 1
-                      </MenubarItem>
-                      <MenubarSeparator />
-                      <MenubarItem>Home Car 2</MenubarItem>
-                      <MenubarSeparator />
-                      <MenubarItem>Home-Boxed</MenubarItem>
-                      <MenubarSeparator />
-                      <MenubarItem>Home Bicycle</MenubarItem>
-                      <MenubarSeparator />
-                      <MenubarItem>Home Scooter</MenubarItem>
-                      <MenubarSeparator />
-                      <MenubarItem>Home Kayak</MenubarItem>
-                      <MenubarSeparator />
-                      <MenubarItem>Home Yatch</MenubarItem>
-                    </MenubarContent>
-                  </MenubarMenu>
-                </Menubar>
-              </a>
-            </li>
-            <li>
-              <a href='#' className='text-lg cursor-pointer flex items-center space-x-1'>
+          <div className='absolute top-20 right-0 bg-white shadow-lg rounded-t-none rounded-lg px-4 w-full flex flex-col justify-center'>
+            <ul className='flex lg:space-x-10 space-y-6 lg:space-y-0 lg:flex-row flex-col md:mx-16 z-50'>
+              <li>
+                <Link href='/' className='text-lg cursor-pointer flex items-center space-x-1'>
                   <Menubar>
                     <MenubarMenu>
-                      <MenubarTrigger className='flex space-x-1 items-center cursor-pointer'>Features</MenubarTrigger>
+                      <MenubarTrigger className='flex space-x-1 items-center cursor-pointer'>Home</MenubarTrigger>
                       <MenubarContent>
                         <MenubarItem>
-                          Typography
+                          Home Car 1
                         </MenubarItem>
                         <MenubarSeparator />
-                        <MenubarItem>Shortcodes</MenubarItem>
+                        <MenubarItem>Home Car 2</MenubarItem>
                         <MenubarSeparator />
-                        <MenubarItem>Service Plus</MenubarItem>
+                        <MenubarItem>Home-Boxed</MenubarItem>
                         <MenubarSeparator />
-                        <MenubarItem>Privacy Policy</MenubarItem>
+                        <MenubarItem>Home Bicycle</MenubarItem>
+                        <MenubarSeparator />
+                        <MenubarItem>Home Scooter</MenubarItem>
+                        <MenubarSeparator />
+                        <MenubarItem>Home Kayak</MenubarItem>
+                        <MenubarSeparator />
+                        <MenubarItem>Home Yatch</MenubarItem>
                       </MenubarContent>
                     </MenubarMenu>
                   </Menubar>
-                </a>
-            </li>
-            <li>
-              <a href='#' className='text-lg cursor-pointer flex items-center space-x-1'>
-                  <Menubar>
-                    <MenubarMenu>
-                      <MenubarTrigger className='flex space-x-1 items-center cursor-pointer'>About Us</MenubarTrigger>
-                      <MenubarContent>
-                        <MenubarItem>Shop</MenubarItem>
-                        <MenubarSeparator />
-                        <MenubarItem>Our Features</MenubarItem>
-                        <MenubarSeparator />
-                        <MenubarItem>Our Benefits</MenubarItem>
-                        <MenubarSeparator />
-                        <MenubarItem>Testimonials</MenubarItem>
-                        <MenubarSeparator />
-                        <MenubarItem>Gallery</MenubarItem>
-                        <MenubarSeparator />
-                        <MenubarItem>FAQs</MenubarItem>
-                      </MenubarContent>
-                    </MenubarMenu>
-                  </Menubar>
-              </a>
-            </li>
-            <li>
-              <a href='#' className='text-lg cursor-pointer'>
-                  <Menubar>
-                    <MenubarMenu>
-                      <MenubarTrigger className='flex space-x-1 items-center cursor-pointer'>Rent a Car</MenubarTrigger>
-                    </MenubarMenu>
-                  </Menubar>
-              </a>
-            </li>
-            <li>
-              <a href='#' className='text-lg cursor-pointer flex items-center space-x-1'>
-                  <Menubar>
-                    <MenubarMenu>
-                      <MenubarTrigger className='flex space-x-1 items-center cursor-pointer'>News</MenubarTrigger>
-                      <MenubarContent>
-                        <MenubarItem>All Posts</MenubarItem>
-                        <MenubarSeparator />
-                          <MenubarSub>
-                            <MenubarSubTrigger className='flex space-x-2 items-center'>Classic Style</MenubarSubTrigger>
-                            <MenubarSubContent>
-                              <MenubarItem>2 Columns</MenubarItem>
-                              <MenubarItem>3 Columns</MenubarItem>
-                            </MenubarSubContent>
-                          </MenubarSub>
-                        <MenubarSeparator />
-                          <MenubarSub>
-                            <MenubarSubTrigger className='flex space-x-2 items-center'>Portfolio Style</MenubarSubTrigger>
-                            <MenubarSubContent>
-                              <MenubarItem>2 Columns</MenubarItem>
-                              <MenubarItem>3 Columns</MenubarItem>
-                              <MenubarItem>4 Columns</MenubarItem>
-                            </MenubarSubContent>
-                          </MenubarSub>
-                        <MenubarSeparator />
-                          <MenubarSub>
-                            <MenubarSubTrigger className='flex space-x-2 items-center'>Chess Style</MenubarSubTrigger>
-                            <MenubarSubContent>
-                              <MenubarItem>1 Columns</MenubarItem>
-                              <MenubarItem>2 Columns</MenubarItem>
-                              <MenubarItem>3 Columns</MenubarItem>
-                            </MenubarSubContent>
-                          </MenubarSub>
-                        <MenubarSeparator />
-                      </MenubarContent>
-                    </MenubarMenu>
-                  </Menubar>
-              </a>
-            </li>
-            <li>
-              <a href='#' className='text-lg cursor-pointer'>
-                  <Menubar>
-                    <MenubarMenu>
-                      <MenubarTrigger className='flex space-x-1 items-center cursor-pointer'>Contacts</MenubarTrigger>
-                    </MenubarMenu>
-                  </Menubar>
-              </a>
-            </li>
+                </Link>
+              </li>
+              <li>
+                <Link href='#' className='text-lg cursor-pointer flex items-center space-x-1'>
+                    <Menubar>
+                      <MenubarMenu>
+                        <MenubarTrigger className='flex space-x-1 items-center cursor-pointer'>Features</MenubarTrigger>
+                        <MenubarContent>
+                          <MenubarItem>
+                            Typography
+                          </MenubarItem>
+                          <MenubarSeparator />
+                          <MenubarItem>Shortcodes</MenubarItem>
+                          <MenubarSeparator />
+                          <MenubarItem>Service Plus</MenubarItem>
+                          <MenubarSeparator />
+                          <MenubarItem>Privacy Policy</MenubarItem>
+                        </MenubarContent>
+                      </MenubarMenu>
+                    </Menubar>
+                  </Link>
+              </li>
+              <li>
+                <Link href='/AboutUs' className='text-lg cursor-pointer flex items-center space-x-1'>
+                    <Menubar>
+                      <MenubarMenu>
+                        <MenubarTrigger className='flex space-x-1 items-center cursor-pointer'>About Us</MenubarTrigger>
+                        <MenubarContent>
+                          <MenubarItem>Shop</MenubarItem>
+                          <MenubarSeparator />
+                          <MenubarItem>Our Features</MenubarItem>
+                          <MenubarSeparator />
+                          <MenubarItem>Our Benefits</MenubarItem>
+                          <MenubarSeparator />
+                          <MenubarItem>Testimonials</MenubarItem>
+                          <MenubarSeparator />
+                          <MenubarItem>Gallery</MenubarItem>
+                          <MenubarSeparator />
+                          <MenubarItem>FAQs</MenubarItem>
+                        </MenubarContent>
+                      </MenubarMenu>
+                    </Menubar>
+                </Link>
+              </li>
+              <li>
+                <Link href='#' className='text-lg cursor-pointer'>
+                    <Menubar>
+                      <MenubarMenu>
+                        <MenubarTrigger className='flex space-x-1 items-center cursor-pointer'>Rent a Car</MenubarTrigger>
+                      </MenubarMenu>
+                    </Menubar>
+                </Link>
+              </li>
+              <li>
+                <Link href='/Blogs' className='text-lg cursor-pointer flex items-center space-x-1'>
+                    <Menubar>
+                      <MenubarMenu>  
+                          <MenubarTrigger className='flex space-x-1 items-center cursor-pointer'>Blogs</MenubarTrigger>
+                      </MenubarMenu>
+                    </Menubar>
+                </Link>
+              </li>
+              <li>
+                <Link href='/Contact' className='text-lg cursor-pointer'>
+                    <Menubar>
+                      <MenubarMenu>
+                        <MenubarTrigger className='flex space-x-1 items-center cursor-pointer mb-2'>Contacts</MenubarTrigger>
+                      </MenubarMenu>
+                    </Menubar>
+                </Link>
+              </li>
           </ul>
         </div>
         )}
         <div className='hidden xl:flex'>
           <button className='bg-[#024430] text-[#FFE7BB] px-6 py-3 rounded-lg'>
-            Find a Car Now
+            Find Link Car Now
           </button>
         </div>
     </div>
