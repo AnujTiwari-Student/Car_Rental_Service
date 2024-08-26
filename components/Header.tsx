@@ -46,23 +46,6 @@ function Header() {
                 <Menubar>
                   <MenubarMenu>
                     <MenubarTrigger className='flex space-x-1 items-center cursor-pointer'>Home</MenubarTrigger>
-                    <MenubarContent>
-                      <MenubarItem>
-                        Home Car 1
-                      </MenubarItem>
-                      <MenubarSeparator />
-                      <MenubarItem>Home Car 2</MenubarItem>
-                      <MenubarSeparator />
-                      <MenubarItem>Home-Boxed</MenubarItem>
-                      <MenubarSeparator />
-                      <MenubarItem>Home Bicycle</MenubarItem>
-                      <MenubarSeparator />
-                      <MenubarItem>Home Scooter</MenubarItem>
-                      <MenubarSeparator />
-                      <MenubarItem>Home Kayak</MenubarItem>
-                      <MenubarSeparator />
-                      <MenubarItem>Home Yatch</MenubarItem>
-                    </MenubarContent>
                   </MenubarMenu>
                 </Menubar>
               </Link>
@@ -151,23 +134,6 @@ function Header() {
                   <Menubar>
                     <MenubarMenu>
                       <MenubarTrigger className='flex space-x-1 items-center cursor-pointer'>Home</MenubarTrigger>
-                      <MenubarContent>
-                        <MenubarItem>
-                          Home Car 1
-                        </MenubarItem>
-                        <MenubarSeparator />
-                        <MenubarItem>Home Car 2</MenubarItem>
-                        <MenubarSeparator />
-                        <MenubarItem>Home-Boxed</MenubarItem>
-                        <MenubarSeparator />
-                        <MenubarItem>Home Bicycle</MenubarItem>
-                        <MenubarSeparator />
-                        <MenubarItem>Home Scooter</MenubarItem>
-                        <MenubarSeparator />
-                        <MenubarItem>Home Kayak</MenubarItem>
-                        <MenubarSeparator />
-                        <MenubarItem>Home Yatch</MenubarItem>
-                      </MenubarContent>
                     </MenubarMenu>
                   </Menubar>
                 </Link>
@@ -245,8 +211,8 @@ function Header() {
         </div>
         )}
         <div className='hidden xl:flex'>
-          <button className='bg-[#024430] text-[#FFE7BB] px-6 py-3 rounded-lg'>
-            Find Link Car Now
+          <button className='bg-[#024430] text-[#FFE7BB] px-6 py-3 rounded-lg hover:bg-[#1f5c4a]'>
+            Find a Car Now
           </button>
         </div>
     </div>
