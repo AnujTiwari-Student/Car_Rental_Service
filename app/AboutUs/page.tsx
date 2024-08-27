@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
 import designImg from '../../assets/about/finger.png'
+import AboutDetails from '@/components/AboutDetails'
 
 function page() {
   return (
@@ -13,6 +14,7 @@ function page() {
           <p className='text-lg text-[#4e6770] w-full md:w-[550px] xl:w-[700px] text-center'>Social media networks are open to all. Social media is typically used for social interaction and
           access to news and information, and descision making.</p>
         </div>
+        <AboutDetails />
     </div>
   )
 }

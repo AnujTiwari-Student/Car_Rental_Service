@@ -75,19 +75,6 @@ function Header() {
                   <Menubar>
                     <MenubarMenu>
                       <MenubarTrigger className='flex space-x-1 items-center cursor-pointer'>About Us</MenubarTrigger>
-                      <MenubarContent>
-                        <MenubarItem>Shop</MenubarItem>
-                        <MenubarSeparator />
-                        <MenubarItem>Our Features</MenubarItem>
-                        <MenubarSeparator />
-                        <MenubarItem>Our Benefits</MenubarItem>
-                        <MenubarSeparator />
-                        <MenubarItem>Testimonials</MenubarItem>
-                        <MenubarSeparator />
-                        <MenubarItem>Gallery</MenubarItem>
-                        <MenubarSeparator />
-                        <MenubarItem>FAQs</MenubarItem>
-                      </MenubarContent>
                     </MenubarMenu>
                   </Menubar>
               </Link>
@@ -163,19 +150,6 @@ function Header() {
                     <Menubar>
                       <MenubarMenu>
                         <MenubarTrigger className='flex space-x-1 items-center cursor-pointer'>About Us</MenubarTrigger>
-                        <MenubarContent>
-                          <MenubarItem>Shop</MenubarItem>
-                          <MenubarSeparator />
-                          <MenubarItem>Our Features</MenubarItem>
-                          <MenubarSeparator />
-                          <MenubarItem>Our Benefits</MenubarItem>
-                          <MenubarSeparator />
-                          <MenubarItem>Testimonials</MenubarItem>
-                          <MenubarSeparator />
-                          <MenubarItem>Gallery</MenubarItem>
-                          <MenubarSeparator />
-                          <MenubarItem>FAQs</MenubarItem>
-                        </MenubarContent>
                       </MenubarMenu>
                     </Menubar>
                 </Link>
