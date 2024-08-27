@@ -6,21 +6,21 @@ import Image from 'next/image'
 
 const Details = [
     {
-        "id": 1,
-        title:"Visit the Knowledge Base",
-        description: "Browse customer support articles and step-by-step instructions for specific features.",
+        id: 1,
+        title: "Explore Our Fleet",
+        description: "Browse through our wide range of rental cars to find the perfect vehicle for your needs.",
         image: img1,
     },
     {
-        "id": 2,
-        title:"Watch Product Videos",
-        description: "Watch our video tutorials for visual walkthroughs of our cars.",
+        id: 2,
+        title: "Watch Car Reviews",
+        description: "Watch detailed reviews and walkthroughs of our rental cars to make an informed choice.",
         image: img2,
     },
     {
-        "id": 3,
-        title:"Get in touch with Us",
-        description: "Let us talk about how we can help you.",
+        id: 3,
+        title: "Contact Us for Bookings",
+        description: "Get in touch with us to book your rental car or for any inquiries.",
         image: img3,
     },
 ]

@@ -8,6 +8,9 @@ import { ArrowRight } from 'lucide-react'
 import SupportCard from '@/components/SupportCard'
 import GetInTouch from '@/components/GetInTouch'
 import FrequentlyAsked from '@/components/FrequentlyAsked'
+import banner from '../../assets/bg-banner.png'
+import Footer from '@/components/Footer'
+import PrivacyPolicy from '@/components/PrivacyPolicy'
 
 function page() {
   return (
@@ -22,7 +25,7 @@ function page() {
                 </div>
                 <div className='flex flex-col space-y-6'>
                     <div>
-                        <p className='text-xl font-semibold'>
+                        <p className='text-xl text-gray-700 font-semibold'>
                             Install App
                         </p>
                     </div>
@@ -34,7 +37,7 @@ function page() {
                             <Image src={playStoreBtn} alt='PlayStore-btn' className=' hover:-translate-y-1 transition-transform duration-500' />
                         </Link>
                         <div className='hidden md:flex cursor-pointer group hover:-translate-y-1 transition-transform duration-500'>
-                            <p className='text-base font-semibold flex items-center hover:text-green-500'>
+                            <p className='text-base font-semibold flex items-center hover:text-[#0ea17c]'>
                                 Learn more
                                  <span className='ml-1 transform transition-transform text-black duration-500 group-hover:-rotate-45 mt-1'>
                                     <ArrowRight size={20} />
@@ -44,13 +47,37 @@ function page() {
                     </div>
                 </div>
             </div>
-            <div className='hidden xl:flex mt-40'>
-                <Image src={person_img} alt='person-image' height={700} className='items-end flex' />
+
+            <div className="hidden xl:flex mt-36 relative w-full h-[420px]">
+                <div className="relative w-full h-full flex items-end justify-end">
+                    <div className="absolute bottom-6 left-0 w-full h-full">
+                        <Image
+                            src={banner}
+                            alt="Design"
+                            layout="fill"
+                            objectFit="contain"
+                            className="relative bottom-12 z-0"
+                        />
+                    </div>
+                    <div className="relative w-full h-full flex items-end justify-end">
+                        <Image
+                            src={person_img}
+                            alt="Person"
+                            layout="fill"
+                            objectFit="contain"
+                            className="relative z-10"
+                        />
+                    </div>
+                </div>
             </div>
+
         </div>
+
         <SupportCard />
         <GetInTouch />
         <FrequentlyAsked />
+        <Footer />
+        <PrivacyPolicy />
     </div>
   )
 }

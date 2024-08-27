@@ -5,41 +5,42 @@ import chart from '../assets/chart.png'
 import earth from '../assets/earth.png'
 import Image from 'next/image'
 
-const support = [
+const supportData = [
   {
     id: 1,
-    title: 'Help & support',
-    email: 'yourmail@info.com',
-    description: 'For help refer to FAQs and customer support.',
+    title: 'Customer Support',
+    email: 'support@carrental.com',
+    description: 'For assistance, refer to our FAQs.',
     image: headphone,
   },
   {
     id: 2,
-    title: 'Phone Number',
-    email: 'yourmail@info.com',
-    description: 'Call us on 08005552233 for any queries.',
+    title: 'Call Us',
+    email: 'support@carrental.com',
+    description: 'Call us at 08005552233 for immediate assistance.',
     image: phone,
   },
   {
     id: 3,
-    title: 'Visit Office',
-    email: 'yourmail@info.com',
-    description: '4 GoldField Rd. Honolulu, HI 96815.',
+    title: 'Visit Us',
+    email: 'support@carrental.com',
+    description: '123 Car Rental Ave, City, State, ZIP.',
     image: chart,
   },
   {
     id: 4,
-    title: 'Best Service',
-    email: 'yourmail@info.com',
-    description: 'Try our best car rental service.',
+    title: 'Top-Notch Service',
+    email: 'support@carrental.com',
+    description: 'Experience the best car rental service in town.',
     image: earth,
   },
 ]
 
+
 function SupportCard() {
   return (
     <div className='my-16 flex flex-col md:flex-row mx-4 md:mx-20 justify-center items-center'>
-      {support.map((item) => (
+      {supportData.map((item) => (
         <div key={item.id} className='w-full md:w-2/4 p-4'>
           <div className='rounded-sm p-2 bg-[#E0f1f4] items-center flex justify-center w-max'>
             <Image src={item.image} alt='images' width={30} />
