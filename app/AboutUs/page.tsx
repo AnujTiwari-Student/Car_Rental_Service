@@ -2,6 +2,7 @@ import Image from 'next/image'
 import React from 'react'
 import designImg from '../../assets/about/finger.png'
 import AboutDetails from '@/components/AboutDetails'
+import CoreValues from '@/components/CoreValues'
 
 function page() {
   return (
@@ -15,6 +16,7 @@ function page() {
           access to news and information, and descision making.</p>
         </div>
         <AboutDetails />
+        <CoreValues />
     </div>
   )
 }
