@@ -42,7 +42,7 @@ const details = [
 
 function AboutDetails() {
   return (
-    <div className='border shadow-lg py-12 px-4 xl:px-20 rounded-xl'>
+    <div className='border shadow-lg py-12 px-4 xl:px-20 rounded-xl mx-4 md:mx-20'>
         <div className='flex justify-between flex-wrap gap-8'>
             {details.map((item)=>(
                 <div key={item.id} className='flex flex-col justify-center items-center space-y-2 w-[120px]'>

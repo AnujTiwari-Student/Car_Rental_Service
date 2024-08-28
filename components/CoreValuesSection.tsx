@@ -41,12 +41,12 @@ const serviceFeatures = [
 
 function CoreValues() {
   return (
-    <div className='my-20 flex flex-col xl:flex-row space-y-6 xl:space-y-0 justify-between'>
-        <div className='flex space-x-6 xl:mt-2'>
+    <div className='my-20 flex flex-col xl:flex-row space-y-8 xl:space-y-0 justify-between mx-4 md:mx-20'>
+        <div className='flex space-x-6 xl:mt-4'>
             <Image src={img} alt='arrow-down' className='animate-upDown h-28 z-10'/>
-            <div>
-                <h1 className='text-3xl text-[#024430] font-bold z-10'>Core values</h1>
-                <p className='text-[#4e6770] z-10'>We break down barriers so teams can focus on what matters – working together to create products their customers love.</p>
+            <div className='xl:w-[500px] xl:pr-16'>
+                <h1 className='text-3xl text-[#024430] font-bold z-10 mb-3'>Core values</h1>
+                <p className='text-[#4e6770] z-10'>We simplify the car rental process, allowing you to enjoy a seamless experience from start to finish. Our goal is to provide you with reliable, affordable vehicles so you can focus on what matters reaching your destination with ease and comfort.</p>
             </div>
         </div>
         <div className='grid grid-cols-1 gap-y-8 xl:gap-8 xl:grid-cols-2 xl:grid-rows-2'>
@@ -62,7 +62,7 @@ function CoreValues() {
                 </div>
             ))}
         </div>
-        <div className='absolute top-[1750px] left-0 md:top-[1480px] lg:top-[1260px] xl:top-[1000px] xl:left-0'>
+        <div className='absolute top-[1845px] left-0 md:top-[1510px] lg:top-[1260px] xl:top-[1000px] xl:left-0'>
             <Image src={circle} alt='circle' className='relative z-0' />
         </div>
     </div>
