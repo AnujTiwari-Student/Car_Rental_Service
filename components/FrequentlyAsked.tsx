@@ -8,6 +8,8 @@ import {
     AccordionItem,
     AccordionTrigger,
   } from "@/components/ui/accordion"
+import ContactUsButton from './ContactUsButton'
+import SupportButton from './SupportButton'
 
   const accordionData = [
     {
@@ -94,18 +96,9 @@ function FrequentlyAsked() {
 
                   <div className="flex space-x-8 items-center">
 
-                      <button className="bg-[#024430] text-[#FFE7BB] py-2 px-4 hover:bg-[#066a4c] hover:-translate-y-1 transition-transform duration-500 rounded-sm">
-                          Contact Us
-                      </button>
+                      <ContactUsButton />
 
-                      <div className='group'>
-                          <button className="flex items-center transition-transform duration-500 group-hover:-translate-y-1 font-semibold text-base hover:text-green-500">
-                              Support Center
-                              <div className="ml-2 mt-1 transform transition-transform duration-300 group-hover:-rotate-45">
-                                  <ArrowRight size={20} className="text-black" />
-                              </div>
-                          </button>
-                      </div>
+                     <SupportButton />
                       
                   </div>
 

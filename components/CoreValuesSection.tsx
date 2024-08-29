@@ -62,7 +62,7 @@ function CoreValues() {
                 </div>
             ))}
         </div>
-        <div className='absolute top-[1845px] left-0 md:top-[1510px] lg:top-[1260px] xl:top-[1000px] xl:left-0'>
+        <div className='absolute top-[1874px] left-0 md:top-[1515px] lg:top-[1260px] xl:top-[1030px] xl:left-0'>
             <Image src={circle} alt='circle' className='relative z-0' />
         </div>
     </div>

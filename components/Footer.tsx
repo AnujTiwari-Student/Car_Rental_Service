@@ -30,15 +30,15 @@ const customerInfoLinks = [
 ];
 
 const contactInfo = {
-  address: '4 Goldfield Rd. Honolulu, HI 96815',
-  phoneNumbers: ['0 800 555 22 33', '0 811 777 81 91'],
-  email: 'yourmail@information.com',
+  address: '4 Goldfield Rd.',
+  phoneNumbers: ['0 800 555 22 33'],
+  email: 'yourmail@.com',
 };
 
 function Footer() {
   return (
-    <footer className='mx-4 md:mx-20 my-12 flex flex-col space-y-6 xl:space-y-0 xl:flex-row'>
-      <div className='flex-col flex xl:w-[250px] mr-10'>
+    <footer className='mx-4 md:mx-20 my-12 flex flex-col justify-around space-y-6 xl:space-y-0 xl:flex-row'>
+      <div className='flex-col flex xl:w-[300px] mr-10'>
         <Image src={logo} alt='logo' className='h-12 w-12 mb-4' />
         <p className='mb-4 text-[#4e6770]'>
           With so many options for rental service, you must choose the best company. We give you a wide range of quality rides!
@@ -82,7 +82,7 @@ function Footer() {
         </div>
       </div>
 
-      <div className='flex flex-col md:flex-row md:space-x-20 xl:space-x-8'>
+      <div className='flex flex-col md:flex-row md:space-x-20 xl:space-x-12'>
         <div className='flex flex-col space-y-4 xl:w-[200px] my-6 md:my-0'>
           <h1 className='text-2xl font-semibold text-[#024430]'>Contact Us</h1>
           <div className='space-y-1'>
