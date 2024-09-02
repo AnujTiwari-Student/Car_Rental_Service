@@ -98,7 +98,7 @@ function FrequentlyAsked() {
 
                       <ContactUsButton />
 
-                     <SupportButton />
+                     <SupportButton title='Support Center'/>
                       
                   </div>
 

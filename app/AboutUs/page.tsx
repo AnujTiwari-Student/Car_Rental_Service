@@ -18,7 +18,15 @@ function page() {
         <CoreValues />
         <Story />
         <TeamSection />
-        <ContactCard />
+        <ContactCard
+          title="Want to talk to our team expert?"
+          description="Experience top-notch car rental services with a fleet tailored to meet your needs — always reliable and ready for any journey. Choose from a wide range of vehicles to suit every occasion, ensuring comfort and convenience every step of the way."
+          buttonText="Get in Touch"
+          showContactButtons={true}
+          buttonProps='Support Center'
+          showDate={false}
+          showContactUsButton={true}
+        />
         <TestimonialsSection />
         <Footer />
         <PrivacyPolicy />

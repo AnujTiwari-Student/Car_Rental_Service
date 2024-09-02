@@ -6,7 +6,7 @@ interface ArticleButtonProps{
 
 function ArticleButton( {text}: ArticleButtonProps) {
   return (
-    <button className='py-3 px-6 duration-300 hover:bg-[#024430] hover:text-[#ffe7bb] text-gray-500 border rounded-md hover:border-[#024430]'>
+    <button className='py-3 px-6 duration-300 hover:bg-[#024430] hover:text-[#ffe7bb] text-gray-500 border border-gray-300 rounded-md hover:border-[#024430]'>
         {text}
     </button>
   )
