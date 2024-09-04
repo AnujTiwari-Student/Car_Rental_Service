@@ -11,6 +11,7 @@ import FrequentlyAsked from '@/components/FrequentlyAsked'
 import banner from '../../assets/bg-banner.png'
 import Footer from '@/components/Footer'
 import PrivacyPolicy from '@/components/PrivacyPolicy'
+import NewsLetterComponent from '@/components/NewsLetterComponent'
 
 function page() {
   return (
@@ -76,6 +77,7 @@ function page() {
         <SupportCard />
         <GetInTouch />
         <FrequentlyAsked />
+        <NewsLetterComponent />
         <Footer />
         <PrivacyPolicy />
     </div>

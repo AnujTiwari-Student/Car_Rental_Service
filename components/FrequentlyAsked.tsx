@@ -55,14 +55,14 @@ function FrequentlyAsked() {
       ];
 
   return (
-    <div className='border-b border-[#AFEAE4]'>
+    <div className='border-b border-[#AFEAE4] mb-10'>
       <div className='mx-4 md:mx-20 my-14 xl:my-20'>
           <div className='flex flex-col space-y-6'>
               <h2 className='text-3xl md:text-5xl font-semibold text-[#024430]'>Frequently Asked Questions</h2>
               <div className='flex flex-col md:flex-row md:justify-between md:items-center space-y-4 md:space-y-0 group'>
                   <p className='text-base md:text-lg md:w-[500px] xl:w-[500px]'>Feeling inquisitive? Have a read through some of our FAQs or
                   contact our supporters for help</p>
-                  <p className='flex items-center hover:text-green-500 hover:-translate-y-1 transition-transform duration-500 text-base font-semibold'>Contact Us <ArrowRight size={20} className='ml-2 mt-1 text-black transform transition-transform duration-500 group-hover:-rotate-45' /></p>
+                  <p className='flex items-center hover:text-[#0ea17c] hover:-translate-y-1 transition-transform duration-500 text-base font-semibold'>Contact Us <ArrowRight size={20} className='ml-2 mt-1 text-black transform transition-transform duration-500 group-hover:-rotate-45' /></p>
               </div>
           </div>
 
@@ -96,7 +96,7 @@ function FrequentlyAsked() {
 
                   <div className="flex space-x-8 items-center">
 
-                      <ContactUsButton />
+                      <ContactUsButton title='Contact Us' />
 
                      <SupportButton title='Support Center'/>
                       

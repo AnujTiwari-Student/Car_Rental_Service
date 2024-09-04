@@ -67,3 +67,90 @@
     @apply bg-background text-foreground;
   }
 }
+
+.box-newsletter {
+  position: relative;
+  border-radius: 8px;
+  background-color: #CDE2E7;
+  padding: 40px;
+  display: inline-block;
+  width: 100%;
+}
+.box-newsletter::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  height: 100px;
+  width: 111px;
+  background: url(../assets/newsletter_finger.png) no-repeat top right;
+  background-size: cover;
+}
+.box-newsletter .img-main {
+  border-radius: 565px;
+  max-width: 100%;
+  width: 100%;
+}
+.box-newsletter .image-1 {
+  position: absolute;
+  left: 0px;
+  bottom: -45px;
+}
+.box-newsletter .box-image-newsletter {
+  position: relative;
+}
+.box-newsletter .form-newsletter {
+  padding: 10px;
+  background: #fff;
+  border-radius: 8px;
+}
+.box-newsletter .form-newsletter form {
+  display: flex;
+}
+.box-newsletter .form-newsletter form input {
+  width: 100%;
+  border: 0px;
+  outline: 0;
+  box-shadow: none;
+  padding: 10px;
+  color: #071920;
+}
+.box-newsletter.box-newsletter-2 {
+  background-color: #ffffff;
+  border: 1px solid #AFEAE4;
+  padding-bottom: 50px;
+  background-image: url(../assets/tree.png);
+  background-repeat: no-repeat;
+  background-size: auto 80%;
+  background-position: bottom right;
+}
+.box-newsletter.box-newsletter-2 .form-newsletter {
+  border: 1px solid #CDE2E7;  
+  border-radius: 8px;
+}
+.box-newsletter.box-newsletter-2 > .row {
+  position: relative;
+  z-index: 2;
+}
+.box-newsletter.box-newsletter-2::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 140px;
+  height: 70px;
+  width: 165px;
+  background: url(../assets/ellipse1.png) no-repeat top right;
+  background-size: contain;
+  z-index: 1;
+}
+.box-newsletter.box-newsletter-2::after {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  z-index: 1;
+  left: 60px;
+  height: 50px;
+  width: 346px;
+  background: url(../assets/ellipse2.png) no-repeat top right;
+  background-size: contain;
+}

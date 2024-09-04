@@ -9,6 +9,7 @@ import PrivacyPolicy from '@/components/PrivacyPolicy'
 import TeamSection from '@/components/TeamSection'
 import AboutUsSection from '@/components/AboutUsSection'
 import TestimonialsSection from '@/components/TestimonialsSection'
+import NewsLetterComponent from '@/components/NewsLetterComponent'
 
 function page() {
   return (
@@ -28,6 +29,7 @@ function page() {
           showContactUsButton={true}
         />
         <TestimonialsSection />
+        <NewsLetterComponent />
         <Footer />
         <PrivacyPolicy />
     </div>

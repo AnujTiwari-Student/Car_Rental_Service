@@ -35,7 +35,7 @@ function ContactCard({ title, description, buttonText, showContactButtons , show
         <p className='text-[#4e6770] xl:w-[600px]'>{description}</p>
         {showContactButtons && (
           <div className='flex space-x-4 items-center'>
-            {showContactUsButton && <ContactUsButton />} 
+            {showContactUsButton && <ContactUsButton title='Contact Us' />} 
             <SupportButton title={buttonProps} />
           </div>
         )}
