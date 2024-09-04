@@ -26,9 +26,10 @@ function ContactCard({ title, description, buttonText, showContactButtons , show
         <Button text={buttonText} />
         <p className='text-[#024430] text-3xl md:text-4xl font-semibold xl:w-[500px] hover:text-[#0ea17c]'>{title}</p>
         {showDate && (
-          <div className='flex space-x-12'>
-            <p className='text-[#4e6770]'>November 17, 2022</p>
-            <p className='text-[#4e6770]'>2 min read</p>
+          <div className='flex space-x-8'>
+            <p>November 17, 2022</p>
+            <p className='text-[#8dacb7]'>•</p>
+            <p>2 min read</p>
           </div>
         )}
         <p className='text-[#4e6770] xl:w-[600px]'>{description}</p>

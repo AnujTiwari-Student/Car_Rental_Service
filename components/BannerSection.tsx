@@ -10,7 +10,7 @@ function BannerSection() {
             <p className='text-[#3d565f] text-lg xl:w-11/12'>Whether you are looking for a short-term rental or a long-term lease, we provide reliable and affordable car rental options to get you on the road with ease.</p>
         </div>
         <div className='md:pb-8 xl:pb-0 hidden xl:flex'>
-            <Image src={bannerImg} alt='car_rental_banner' height={481} width={680} />
+            <Image src={bannerImg} alt='car_rental_banner' height={481} width={680} className='rounded-sm' />
         </div>
     </div>
   )
