@@ -23,7 +23,7 @@ const CarouselTab = () => {
   ];
 
   return (
-    <div className="container mx-auto">
+    <div className="mx-4 md:mx-20 rounded-sm">
       <Carousel slides={slides} />
     </div>
   );

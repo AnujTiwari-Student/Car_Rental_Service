@@ -3,6 +3,9 @@ import img from '../assets/img-24-copyright.webp'
 import Image from 'next/image'
 import { ArrowRight, Play } from 'lucide-react'
 import { FaApple, FaGooglePlay } from 'react-icons/fa'
+import googlePlay from '../assets/google-play-btn.png'
+import appleBtn from '../assets/appstore-btn.png'
+import SupportButton from './SupportButton'
 
 const data = [
     {
@@ -22,18 +25,9 @@ function DownloadTab() {
                 <p className='text-black font-normal text-lg'>{item.description}</p>
                 <p className='underline underline-offset-2 font-semibold text-lg'>Available on</p>
                 <div className='flex space-x-8 items-center'>
-                    <div className='py-2 px-4 rounded-xl border border-gray-400 cursor-pointer flex items-center space-x-2'>
-                        <FaGooglePlay />
-                        <a href='' className='flex'>Play Store</a>
-                    </div>
-                    <div className='py-2 px-4 rounded-xl border border-gray-400 cursor-pointer flex items-center space-x-2'>
-                        <FaApple size={18} />
-                        <a href=''>App Store</a>
-                    </div>
-                    <div className='md:flex space-x-1 items-center hover:text-green-600 hidden'>
-                        <p className='hidden lg:flex cursor-pointer md:flex items-center'>Read more</p>
-                        <ArrowRight size={14}/>
-                    </div>
+                <Image src={googlePlay} alt='playStore_download_btn' />
+                <Image src={appleBtn} alt='apple_download_btn' />
+                <SupportButton title='Read More' />
                 </div>
             </div>
         ))}

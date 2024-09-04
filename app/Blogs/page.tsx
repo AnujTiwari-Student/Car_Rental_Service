@@ -63,7 +63,7 @@ function Page() {
                 showDate={true}
             />
 
-            <div className='flex flex-col xl:flex-row justify-between xl:space-x-10 mx-4 md:mx-20'>
+            <div className='flex flex-col xl:flex-row justify-between xl:space-x-6 mx-4 md:mx-20'>
                 {blogData.map((blog, index) => (
                     <BlogCard
                         key={index}
