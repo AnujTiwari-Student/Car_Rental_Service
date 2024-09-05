@@ -15,7 +15,7 @@ const Carousel = ({ slides }: { slides: { note: string; title: string; descripti
   }, [slides.length]);
 
   return (
-    <div className="relative w-full h-[500px] md:h-[600px] overflow-hidden">
+    <div className="relative w-full h-[500px] md:h-[600px] overflow-hidden rounded-sm">
       {slides.map((slide, index) => (
         <div
           key={index}
@@ -23,7 +23,7 @@ const Carousel = ({ slides }: { slides: { note: string; title: string; descripti
             index === currentSlide ? 'opacity-100' : 'opacity-0'
           }`}
         >
-          <Image src={slide.imageUrl} alt={slide.title} layout="fill" objectFit="cover" />
+          <Image src={slide.imageUrl} alt={slide.title} layout="fill" objectFit="cover" className='rounded-se-md' />
           <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center">
             <motion.div
               className="text-center text-white"
@@ -31,9 +31,9 @@ const Carousel = ({ slides }: { slides: { note: string; title: string; descripti
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1 }}
             >
-              <p className="text-sm mb-2 uppercase text-green-500 font-extrabold">{slide.note}</p>
+              <p className="text-sm mb-2 uppercase text-[#0ea17c] font-extrabold">{slide.note}</p>
               <h2 className="text-4xl lg:text-6xl font-bold mb-1 lg:w-7/12 mx-auto">{slide.title}</h2>
-              <div className="w-10 h-1 bg-green-500 mx-auto m-4"></div>
+              <div className="w-10 h-1 bg-[#0ea17c] mx-auto m-4"></div>
               <p className="text-xl w-8/12 mx-auto">{slide.description}</p>
             </motion.div>
           </div>
