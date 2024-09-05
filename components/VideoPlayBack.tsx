@@ -32,14 +32,15 @@ function VideoPlayBack() {
                 controls
             />
             ) : (
-            <Image src={img_video} alt='video_img' className='object-cover w-full h-full' />
+            <Image src={img_video} alt='video_img' className='object-cover w-full h-full' /> 
             )}
         </div>
 
         <div className='px-4 xl:px-10 py-10 xl:py-0 bg-[#024430] flex flex-col space-y-6 xl:w-2/4 xl:h-[507px] justify-center'>
             <Button text='Business' />
             <h1 className='text-[#ffe7bb] text-3xl md:text-4xl font-semibold'>Find the Perfect Car for Your Next Journey</h1>
-            <p className='text-base text-white'>Explore a wide range of vehicles available for rent. Whether you're planning a road trip, a weekend getaway, or just need a car for a day, we've got you covered. Choose from luxury cars, SUVs, or budget-friendly options, all with flexible rental terms.</p>
+            {/* eslint-disable-next-line */}
+            <p className='text-base text-white'>Explore a wide range of vehicles available for rent. Whether you&apos;re planning a road trip, a weekend getaway, or just need a car for a day, we&apos;ve got you covered. Choose from luxury cars, SUVs, or budget friendly options, all with flexible rental terms.</p>
             <div
                 className='flex space-x-4 items-center transition-transform hover:-translate-y-2 duration-500 cursor-pointer w-max'
                 onClick={handlePlayPauseVideo}
