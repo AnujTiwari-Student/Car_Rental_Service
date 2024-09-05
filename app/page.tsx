@@ -1,3 +1,4 @@
+import CarDetailsTab from "@/components/CarDetailsTab";
 import CarouselTab from "@/components/CaroselTab";
 import DownloadTab from "@/components/DownloadTab";
 import VideoPlayBack from "@/components/VideoPlayBack";
@@ -9,6 +10,7 @@ export default function Home() {
       <DownloadTab />
       <CarouselTab />
       <VideoPlayBack />
+      <CarDetailsTab />
     </main>
   );
 }
