@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import { useState, useEffect, useRef } from 'react';
 
 interface CarLogoCarouselProps {
@@ -66,11 +67,14 @@ const CarLogoCarousel = ({ logos }: CarLogoCarouselProps) => {
       >
         {clonedLogos.map((logo, index) => (
           <div key={index} className="flex-shrink-0" style={{ width: '150px' }}>
-            <img
+            <Image
               src={logo}
               alt={`Car Logo ${index + 1}`}
               className="w-full h-auto object-contain svg-logo"
-              style={{ width: '60px', fill: '#066a4c' }}
+              style={{ width: '70px', fill: '#066a4c' }}
+              color='#066a4c'
+              width={60}
+              height={70}
             />
           </div>
         ))}
