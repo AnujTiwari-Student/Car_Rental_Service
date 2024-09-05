@@ -25,8 +25,8 @@ function DownloadTab() {
                 <p className='text-black font-normal text-lg'>{item.description}</p>
                 <p className='underline underline-offset-2 font-semibold text-lg'>Available on</p>
                 <div className='flex space-x-8 items-center'>
-                <Image src={googlePlay} alt='playStore_download_btn' />
-                <Image src={appleBtn} alt='apple_download_btn' />
+                <Image src={googlePlay} alt='playStore_download_btn' className='cursor-pointer' />
+                <Image src={appleBtn} alt='apple_download_btn' className='cursor-pointer' />
                 <SupportButton title='Read More' />
                 </div>
             </div>

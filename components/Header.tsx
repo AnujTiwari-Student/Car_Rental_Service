@@ -23,6 +23,7 @@ import {
   MenubarTrigger,
 } from "@/components/ui/menubar"
 import Link from 'next/link'
+import ContactUsButton from './ContactUsButton'
 
 
 
@@ -186,11 +187,7 @@ function Header() {
           </ul>
         </div>
         )}
-        <div className='hidden xl:flex'>
-          <button className='bg-[#024430] text-[#FFE7BB] px-6 py-3 rounded-lg hover:bg-[#1f5c4a]'>
-            Find a Car Now
-          </button>
-        </div>
+        <ContactUsButton title='Find a Car Now' />
     </div>
   )
 }
