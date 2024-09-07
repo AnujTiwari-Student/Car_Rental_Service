@@ -11,9 +11,9 @@ import { Check } from 'lucide-react'
 function CustomerSupport() {
   return (
     <div className='flex flex-col xl:flex-row xl:justify-between xl:space-x-10 space-y-8 xl:space-y-0 my-10 mx-4 md:mx-20 items-center'>
-        <div className='relative xl:h-[402px] xl:w-[768px]'>
+        <div className='relative xl:h-[402px] xl:w-[768px] max-w-full'>
 
-            <Image src={customer_support_img} alt='Customer_support_image' objectFit='cover' className='rounded-[80px] md:rounded-[200px]'/>
+            <Image src={customer_support_img} alt='Customer_support_image' objectFit='cover' className='rounded-[80px] md:rounded-[200px] border-b-[8px] border-[#afeae4] border-r-[6px]'/>
 
             <div className='bg-white rounded-full p-2 absolute -bottom-6 md:-bottom-6 md:left-12 transform translate-x-[-50%] translate-y-[50%] z-50 animate-bounce-up'>
                 <Image src={customer_support} alt='customer_support'  className='h-24 w-24 md:h-auto md:w-auto'/>
@@ -27,7 +27,7 @@ function CustomerSupport() {
         <div className='flex flex-col justify-center space-y-6 xl:w-5/12'>
             <Button text='Customer' />
             <h1 className='text-[#024430] font-semibold text-3xl'>Rent cars seamlessly with our hassle-free platform</h1>
-            <p className='text-[#4e6770]'>Book your ride in minutes with access to a variety of cars. Whether you're planning a trip, need a ride for a business meeting, or just a day out, our rental service has got you covered.</p>
+            <p className='text-[#4e6770]'>Book your ride in minutes with access to a variety of cars. Whether you&apos;re planning a trip, need a ride for a business meeting, or just a day out, our rental service has got you covered.</p>
             <div className='flex space-x-10 md:space-x-16 xl:space-x-20'>
                 <ul className='flex flex-col space-y-3 text-[#4e6770]'>
                     <li className='flex items-center'><Check color='#06d0a6' className='mr-2'/>Wide variety of cars</li>

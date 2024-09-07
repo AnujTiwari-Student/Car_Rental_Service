@@ -1,5 +1,6 @@
 import CarDetailsTab from "@/components/CarDetailsTab";
 import CarouselTab from "@/components/CaroselTab";
+import CustomerDetails from "@/components/CustomerDetails";
 import CustomerSupport from "@/components/CustomerSupport";
 import DownloadTab from "@/components/DownloadTab";
 import VideoPlayBack from "@/components/VideoPlayBack";
@@ -13,6 +14,7 @@ export default function Home() {
       <VideoPlayBack />
       <CarDetailsTab />
       <CustomerSupport />
+      <CustomerDetails />
     </main>
   );
 }

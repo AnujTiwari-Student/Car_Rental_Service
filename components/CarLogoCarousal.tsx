@@ -88,7 +88,7 @@ const CarLogoCarousel = ({ logos }: CarLogoCarouselProps) => {
             <button
               key={index}
               className={`dot ${currentIndex === index + 1 ? 'dot-active' : 'bg-white'}`}
-              onClick={() => setCurrentIndex(index + 1)} // Adjust to match the index with the correct dot
+              onClick={() => setCurrentIndex(index + 1)} 
             />
           ))}
         </div>
