@@ -1,3 +1,4 @@
+import CarCardsTab from "@/components/CarCardsTab";
 import CarDetailsTab from "@/components/CarDetailsTab";
 import CarouselTab from "@/components/CaroselTab";
 import CustomerDetails from "@/components/CustomerDetails";
@@ -15,6 +16,7 @@ export default function Home() {
       <CarDetailsTab />
       <CustomerSupport />
       <CustomerDetails />
+      <CarCardsTab />
     </main>
   );
 }
