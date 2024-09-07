@@ -12,7 +12,7 @@ const CarLogoCarousel = ({ logos }: CarLogoCarouselProps) => {
   const [isTransitioning, setIsTransitioning] = useState(false);
   const totalSlides = logos.length;
   const clonedLogos = [...logos, ...logos]; 
-  const maxDotsVisible = 4;
+  // const maxDotsVisible = 8;
   const carouselRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
@@ -21,6 +21,8 @@ const CarLogoCarousel = ({ logos }: CarLogoCarouselProps) => {
     }, 3000);
     return () => clearInterval(interval);
   }, [currentIndex]);
+
+
 
   const nextSlide = () => {
     setIsTransitioning(true);
@@ -48,17 +50,17 @@ const CarLogoCarousel = ({ logos }: CarLogoCarouselProps) => {
     setIsTransitioning(false);
   };
 
-  const getVisibleDots = () => {
-    const start = Math.max(0, currentIndex - 1);
-    const end = Math.min(totalSlides, start + maxDotsVisible);
-    return logos.slice(start, end);
-  };
+  // const getVisibleDots = () => {
+  //   const start = Math.max(0, currentIndex - 1);
+  //   const end = Math.min(totalSlides, start + maxDotsVisible);
+  //   return logos.slice(start, end);
+  // };
 
   return (
-    <div className="relative h-[170px] flex items-center justify-start">
+    <div className="relative h-[150px] flex items-center justify-start">
       <div
         ref={carouselRef}
-        className={`carousel-inner flex transition-transform duration-500 ease-in-out space-x-2 md:space-x-4 -mt-12`}
+        className={`carousel-inner flex transition-transform duration-500 ease-in-out  md:space-x-4 -mt-16`}
         style={{
           transform: `translateX(-${currentIndex * 150}px)`, 
           transition: isTransitioning ? 'transform 0.5s ease-in-out' : 'none',
@@ -71,7 +73,7 @@ const CarLogoCarousel = ({ logos }: CarLogoCarouselProps) => {
               src={logo}
               alt={`Car Logo ${index + 1}`}
               className="w-full h-auto object-contain svg-logo"
-              style={{ width: '70px', fill: '#066a4c' }}
+              style={{ width: '60px', fill: '#066a4c' }}
               color='#066a4c'
               width={60}
               height={70}
@@ -81,12 +83,12 @@ const CarLogoCarousel = ({ logos }: CarLogoCarouselProps) => {
       </div>
 
       <div className="absolute bottom-4 w-full flex justify-center overflow-hidden">
-        <div className="flex space-x-4 scrollbar-hide">
-          {getVisibleDots().map((_, index) => (
+        <div className="flex space-x-2 scrollbar-hide">
+          {logos.map((_, index) => (
             <button
               key={index}
               className={`dot ${currentIndex === index + 1 ? 'dot-active' : 'bg-white'}`}
-              onClick={() => setCurrentIndex(index)}
+              onClick={() => setCurrentIndex(index + 1)} // Adjust to match the index with the correct dot
             />
           ))}
         </div>

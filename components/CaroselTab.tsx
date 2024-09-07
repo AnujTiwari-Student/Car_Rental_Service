@@ -23,7 +23,7 @@ const CarouselTab = () => {
   ];
 
   return (
-    <div className="mx-4 md:mx-20 rounded-sm">
+    <div className="mx-4 md:mx-20 rounded-sm my-10">
       <Carousel slides={slides} />
     </div>
   );

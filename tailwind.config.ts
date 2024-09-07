@@ -67,10 +67,20 @@ const config = {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: "0" },
         },
+        bounceUp: {
+          '0%, 100%': { transform: 'translateY(-15px)' },
+          '50%': { transform: 'translateY(15px)' },
+        },
+        bounceDown: {
+          '0%, 100%': { transform: 'translateY(15px)' },
+          '50%': { transform: 'translateY(-15px)' },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        'bounce-up': 'bounceUp 3.5s infinite',
+        'bounce-down': 'bounceDown 3.5s infinite',
       },
     },
   },

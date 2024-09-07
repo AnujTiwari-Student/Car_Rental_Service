@@ -34,7 +34,7 @@ const Carousel = ({ slides }: { slides: { note: string; title: string; descripti
               <p className="text-sm mb-2 uppercase text-[#0ea17c] font-extrabold">{slide.note}</p>
               <h2 className="text-4xl lg:text-6xl font-bold mb-1 lg:w-7/12 mx-auto">{slide.title}</h2>
               <div className="w-10 h-1 bg-[#0ea17c] mx-auto m-4"></div>
-              <p className="text-xl w-8/12 mx-auto">{slide.description}</p>
+              <p className="text-xl w-11/12 lg:w-8/12 mx-auto">{slide.description}</p>
             </motion.div>
           </div>
         </div>

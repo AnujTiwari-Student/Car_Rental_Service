@@ -24,10 +24,12 @@ function DownloadTab() {
                 <h1 className='xl:text-5xl text-3xl md:text-4xl font-extrabold text-[#024430]'>{item.heading}</h1>
                 <p className='text-black font-normal text-lg'>{item.description}</p>
                 <p className='underline underline-offset-2 font-semibold text-lg'>Available on</p>
-                <div className='flex space-x-8 items-center'>
-                <Image src={googlePlay} alt='playStore_download_btn' className='cursor-pointer' />
-                <Image src={appleBtn} alt='apple_download_btn' className='cursor-pointer' />
-                <SupportButton title='Read More' />
+                <div className='flex space-x-6 md:space-x-6 lg:space-x-4 xl:space-x-8 md:items-center'>
+                    <Image src={googlePlay} alt='playStore_download_btn' className='cursor-pointer' />
+                    <Image src={appleBtn} alt='apple_download_btn' className='cursor-pointer' />
+                    <div className='hidden lg:flex'>
+                         <SupportButton title='Read More' />
+                    </div>
                 </div>
             </div>
         ))}

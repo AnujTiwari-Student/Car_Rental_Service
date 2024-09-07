@@ -175,14 +175,14 @@
 }
 
 .dot {
-  width: 0.75rem;
-  height: 0.75rem;
+  width: 0.5rem;
+  height: 0.5rem;
   border-radius: 50%;
 }
 
 .dot-active {
-  width: 1.5rem;
-  height: 0.75rem; 
+  width: 1rem;
+  height: 0.5rem; 
   border-radius: 0.375rem;
   background-color: #024430; 
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
