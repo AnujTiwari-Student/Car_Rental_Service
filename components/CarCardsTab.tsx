@@ -13,9 +13,9 @@ function CarCardsTab() {
   return (
     <div className='mx-4 md:mx-20 my-20'>
         <div className='scrollbar-hide overflow-x-scroll flex space-x-4 md:space-x-10 w-full xl:justify-center'>
-          <CarCard image={suzuki} company='Citi Rider' title='Maruti Suzuki' description='The Swift and Dzire secured the fourth and fifth spot respectively' />
-          <CarCard image={suzuki} company='Citi Rider' title='Maruti Suzuki' description='The Swift and Dzire secured the fourth and fifth spot respectively' />
-          <CarCard image={suzuki} company='Citi Rider' title='Maruti Suzuki' description='The Swift and Dzire secured the fourth and fifth spot respectively' />
+          <CarCard image={suzuki} company='Maruti' title='Maruti Suzuki' description='The Swift and Dzire secured the fourth and fifth spot respectively' />
+          <CarCard image={suzuki} company='KIA' title='Maruti Suzuki' description='The Swift and Dzire secured the fourth and fifth spot respectively' />
+          <CarCard image={suzuki} company='BMW' title='Maruti Suzuki' description='The Swift and Dzire secured the fourth and fifth spot respectively' />
         </div>
     </div>  
   )

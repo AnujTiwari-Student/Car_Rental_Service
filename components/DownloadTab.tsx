@@ -85,7 +85,7 @@ function DownloadTab() {
         </div>
         <Image src={finger} alt='icons_logo' className='absolute top-20 right-0' />
         <Image src={finger2} alt='icons_logo' className='absolute -bottom-96 md:-bottom-10 xl:-bottom-24 left-0' />
-        <Image src={scrollbar} alt='icons_logo' className='hidden xl:block absolute xl:-bottom-16 animate-upDown left-[50%]'/>
+        <Image src={scrollbar} alt='icons_logo' className='hidden xl:block absolute xl:-bottom-16 animate-upDown left-[51.4%]'/>
     </div>
   )
 }

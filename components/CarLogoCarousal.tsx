@@ -11,7 +11,7 @@ const CarLogoCarousel = ({ logos }: CarLogoCarouselProps) => {
   const [currentIndex, setCurrentIndex] = useState(1); 
   const [isTransitioning, setIsTransitioning] = useState(false);
   const totalSlides = logos.length;
-  const clonedLogos = [...logos, ...logos]; 
+  const clonedLogos = [...logos, ...logos , ...logos]; 
   // const maxDotsVisible = 8;
   const carouselRef = useRef<HTMLDivElement | null>(null);
 
@@ -68,13 +68,12 @@ const CarLogoCarousel = ({ logos }: CarLogoCarouselProps) => {
         onTransitionEnd={handleTransitionEnd}
       >
         {clonedLogos.map((logo, index) => (
-          <div key={index} className="flex-shrink-0" style={{ width: '150px' }}>
+          <div key={index} className="flex-shrink-0" style={{ width: '110px' }}>
             <Image
               src={logo}
               alt={`Car Logo ${index + 1}`}
-              className="w-full h-auto object-contain svg-logo"
-              style={{ width: '60px', fill: '#066a4c' }}
-              color='#066a4c'
+              className="w-full h-auto object-contain"
+              style={{ width: '60px' }}
               width={60}
               height={70}
             />

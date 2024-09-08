@@ -170,10 +170,6 @@
   transition: transform 0.5s ease-in-out;
 }
 
-.svg-logo {
-  filter: hue-rotate(120deg) saturate(2) brightness(0.8);
-}
-
 .dot {
   width: 0.5rem;
   height: 0.5rem;
