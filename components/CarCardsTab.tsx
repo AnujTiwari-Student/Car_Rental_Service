@@ -12,7 +12,7 @@ import CarCard from './CarCard'
 function CarCardsTab() {
   return (
     <div className='mx-4 md:mx-20 my-20'>
-        <div className='overflow-x-auto flex space-x-10 justify-center'>
+        <div className='scrollbar-hide overflow-x-scroll flex space-x-4 md:space-x-10 w-full xl:justify-center'>
           <CarCard image={suzuki} company='Citi Rider' title='Maruti Suzuki' description='The Swift and Dzire secured the fourth and fifth spot respectively' />
           <CarCard image={suzuki} company='Citi Rider' title='Maruti Suzuki' description='The Swift and Dzire secured the fourth and fifth spot respectively' />
           <CarCard image={suzuki} company='Citi Rider' title='Maruti Suzuki' description='The Swift and Dzire secured the fourth and fifth spot respectively' />

@@ -11,7 +11,7 @@ interface CarCardProps {
 
 function CarCard({image , company , title , description}: CarCardProps) {
   return (
-    <div className='border border-[#024430] rounded-md p-4 md:p-6 flex flex-col space-y-4 xl:w-[356px]'>
+    <div className='border border-[#024430] rounded-md p-4 md:p-6 flex flex-col space-y-4 flex-shrink-0 max-w-[356px]'>
         <Image src={image} alt={title} width={350} height={250} className='rounded-md'/>
         <p className='text-[#FFE7BB] rounded-sm w-max p-1 px-3 bg-[#024430]'>{company}</p>
         <h1 className='text-[#024430] text-2xl font-semibold'>{title}</h1>

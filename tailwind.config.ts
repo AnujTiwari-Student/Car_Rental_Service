@@ -75,12 +75,17 @@ const config = {
           '0%, 100%': { transform: 'translateY(15px)' },
           '50%': { transform: 'translateY(-15px)' },
         },
+        upDown: {
+          '0%, 100%': {transform: 'translateY(0)'},
+          '50%': { transform: 'translateY(20px)'},
+        }
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         'bounce-up': 'bounceUp 3.5s infinite',
         'bounce-down': 'bounceDown 3.5s infinite',
+        'upDown': 'upDown 1.5s ease-in-out infinite',
       },
     },
   },
